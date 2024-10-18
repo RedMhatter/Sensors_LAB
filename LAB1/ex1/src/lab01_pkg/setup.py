@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "controller = lab01_pkg.controller:main"
+            "controller = lab01_pkg.controller:main",
+            "localization = lab01_pkg.localization:main"
         ],
     },
 )
