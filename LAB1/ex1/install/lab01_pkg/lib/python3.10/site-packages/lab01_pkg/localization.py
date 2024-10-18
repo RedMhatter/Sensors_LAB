@@ -22,9 +22,10 @@ class Localization(Node):
 
     def __init__(self):
         super().__init__('localization')
+
         self.Twist_sub = self.create_subscription(Twist, '/cmd_topic', self.twist_callback, 10)
         self.publisher = self.create_publisher(Pose, '/pose', 10)
-        
+
         self.pose_msg = Pose()
 
     def twist_callback(self, twist : Twist):

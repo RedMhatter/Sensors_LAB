@@ -28,10 +28,19 @@ class Controller(Node):
         self.N = 1
         self.t = 0
 
+        self.first = 0
+
     def timer_callback(self):
         msg = Twist()
+
+        if(self.first == 0):
+            msg.linear.x = 0.0
+            msg.linear.y = 0.0
+            self.get_logger().info(f'Velocity: {msg.linear}')
+            self.publisher_.publish(msg)
+            self.first += 1
         
-        if self.N%4 == 1:
+        elif self.N%4 == 1:
             if self.t < self.N-1:
                 msg.linear.x = 1.0
                 self.get_logger().info(f'Velocity x: {msg.linear}')
