@@ -1,0 +1,21 @@
+[0.574s] Invoking command in '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg': PYTHONPATH=/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build --no-deps symlink_data --force
+[0.781s] running develop
+[0.782s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.782s]   warnings.warn(
+[0.923s] running egg_info
+[0.923s] writing lab02_pkg.egg-info/PKG-INFO
+[0.923s] writing dependency_links to lab02_pkg.egg-info/dependency_links.txt
+[0.923s] writing entry points to lab02_pkg.egg-info/entry_points.txt
+[0.923s] writing requirements to lab02_pkg.egg-info/requires.txt
+[0.924s] writing top-level names to lab02_pkg.egg-info/top_level.txt
+[0.925s] reading manifest file 'lab02_pkg.egg-info/SOURCES.txt'
+[0.926s] writing manifest file 'lab02_pkg.egg-info/SOURCES.txt'
+[0.927s] running build_ext
+[0.927s] Creating /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02-pkg.egg-link (link to .)
+[0.928s] Installing controller script to /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/lab02_pkg
+[0.928s] 
+[0.928s] Installed /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg
+[0.928s] running symlink_data
+[0.929s] symbolically linking /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/resource/lab02_pkg -> /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/share/ament_index/resource_index/packages
+[0.929s] symbolically linking /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/package.xml -> /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/share/lab02_pkg
+[0.989s] Invoked command in '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg' returned '0': PYTHONPATH=/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build --no-deps symlink_data --force

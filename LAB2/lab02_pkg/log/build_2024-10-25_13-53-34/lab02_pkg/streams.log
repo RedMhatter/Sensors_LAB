@@ -1,0 +1,25 @@
+[0.442s] Invoking command in '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/src/lab02_pkg': PYTHONPATH=/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab02_pkg build --build-base /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build install --record /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/install.log --single-version-externally-managed install_data
+[0.596s] running egg_info
+[0.596s] writing ../../build/lab02_pkg/lab02_pkg.egg-info/PKG-INFO
+[0.596s] writing dependency_links to ../../build/lab02_pkg/lab02_pkg.egg-info/dependency_links.txt
+[0.596s] writing entry points to ../../build/lab02_pkg/lab02_pkg.egg-info/entry_points.txt
+[0.596s] writing requirements to ../../build/lab02_pkg/lab02_pkg.egg-info/requires.txt
+[0.597s] writing top-level names to ../../build/lab02_pkg/lab02_pkg.egg-info/top_level.txt
+[0.598s] reading manifest file '../../build/lab02_pkg/lab02_pkg.egg-info/SOURCES.txt'
+[0.598s] adding license file 'LICENSE'
+[0.598s] writing manifest file '../../build/lab02_pkg/lab02_pkg.egg-info/SOURCES.txt'
+[0.598s] running build
+[0.598s] running build_py
+[0.598s] copying lab02_pkg/controller.py -> /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build/lib/lab02_pkg
+[0.599s] running install
+[0.599s] running install_lib
+[0.599s] copying /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build/lib/lab02_pkg/controller.py -> /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg
+[0.600s] byte-compiling /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg/controller.py to controller.cpython-310.pyc
+[0.600s] running install_data
+[0.600s] running install_egg_info
+[0.601s] removing '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.602s] Copying ../../build/lab02_pkg/lab02_pkg.egg-info to /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg-0.0.0-py3.10.egg-info
+[0.602s] running install_scripts
+[0.617s] Installing controller script to /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/lab02_pkg
+[0.618s] writing list of installed files to '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/install.log'
+[0.640s] Invoked command in '/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/src/lab02_pkg' returned '0': PYTHONPATH=/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab02_pkg build --build-base /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/build install --record /home/rosario/Desktop/Sensors/LAB2/lab02_pkg/build/lab02_pkg/install.log --single-version-externally-managed install_data

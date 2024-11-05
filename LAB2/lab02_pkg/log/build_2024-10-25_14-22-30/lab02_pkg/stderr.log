@@ -1,0 +1,5 @@
+  File "/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg/controller.py", line 56
+    if(math.pi-math.pi*0.01 <=  <= math.pi-math.pi*0.01 ):
+                                ^^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,5 @@
+  File "/home/rosario/Desktop/Sensors/LAB2/lab02_pkg/install/lab02_pkg/lib/python3.10/site-packages/lab02_pkg/controller.py", line 40
+    if(self.distance > 1)
+                         ^
+SyntaxError: expected ':'
+
