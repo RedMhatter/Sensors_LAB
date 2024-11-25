@@ -1,0 +1,3 @@
+[console_scripts]
+filter = ekf_filter.filter:main
+
