@@ -1,0 +1,3 @@
+Tutti i codici si trovano all'interno di /TASK_x/ekf_filter_xxxx/ekf_filter
+
+Il codice principale da commentare è filter, per la task 2 è un po' più complesso. (Leggi README TASK_2)

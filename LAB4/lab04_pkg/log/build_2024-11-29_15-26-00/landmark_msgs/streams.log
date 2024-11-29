@@ -1,0 +1,251 @@
+[0.014s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/src/turtlebot3_perception/landmark_msgs -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.101s] -- Detecting C compiler ABI info
+[0.157s] -- Detecting C compiler ABI info - done
+[0.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.161s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.163s] -- Detecting CXX compiler ABI info
+[0.380s] -- Detecting CXX compiler ABI info - done
+[0.385s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.385s] -- Detecting CXX compile features
+[0.385s] -- Detecting CXX compile features - done
+[0.387s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.495s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.583s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.585s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.589s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.619s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.642s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.844s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.997s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.195s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.213s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.214s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.234s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.234s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.234s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.235s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.249s] -- Found PythonExtra: .so  
+[1.286s] -- Configuring done
+[1.309s] -- Generating done
+[1.311s] -- Build files have been written to: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs
+[1.320s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/src/turtlebot3_perception/landmark_msgs -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs
+[1.322s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs -- -j16 -l16
+[1.358s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.367s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.376s] [  5%] Built target ament_cmake_python_copy_landmark_msgs
+[1.555s] running egg_info
+[1.556s] creating landmark_msgs.egg-info
+[1.556s] writing landmark_msgs.egg-info/PKG-INFO
+[1.556s] writing dependency_links to landmark_msgs.egg-info/dependency_links.txt
+[1.556s] writing top-level names to landmark_msgs.egg-info/top_level.txt
+[1.557s] writing manifest file 'landmark_msgs.egg-info/SOURCES.txt'
+[1.558s] reading manifest file 'landmark_msgs.egg-info/SOURCES.txt'
+[1.558s] writing manifest file 'landmark_msgs.egg-info/SOURCES.txt'
+[1.563s] [  5%] Built target landmark_msgs__cpp
+[1.572s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.573s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.573s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.579s] [ 17%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_generator_c.dir/rosidl_generator_c/landmark_msgs/msg/detail/landmark__functions.c.o[0m
+[1.580s] [ 17%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_generator_c.dir/rosidl_generator_c/landmark_msgs/msg/detail/landmark_array__functions.c.o[0m
+[1.586s] [ 17%] Built target ament_cmake_python_build_landmark_msgs_egg
+[1.631s] [ 20%] [32m[1mLinking C shared library liblandmark_msgs__rosidl_generator_c.so[0m
+[1.666s] [ 20%] Built target landmark_msgs__rosidl_generator_c
+[1.676s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.676s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.676s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.754s] [ 30%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/landmark_msgs/msg/landmark__type_support.cpp.o[0m
+[1.754s] [ 33%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/landmark_msgs/msg/landmark_array__type_support.cpp.o[0m
+[1.762s] [ 35%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/landmark_msgs/msg/detail/landmark_array__type_support.cpp.o[0m
+[1.763s] [ 38%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/landmark_msgs/msg/detail/landmark__type_support.cpp.o[0m
+[1.774s] [ 41%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/landmark_msgs/msg/detail/dds_fastrtps/landmark_array__type_support.cpp.o[0m
+[1.775s] [ 43%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/landmark_msgs/msg/detail/dds_fastrtps/landmark__type_support.cpp.o[0m
+[1.883s] [ 48%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/landmark_msgs/msg/landmark__type_support.cpp.o[0m
+[1.883s] [ 48%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/landmark_msgs/msg/detail/landmark__type_support.c.o[0m
+[1.883s] [ 53%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/landmark_msgs/msg/landmark_array__type_support.cpp.o[0m
+[1.883s] [ 53%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/landmark_msgs/msg/detail/landmark_array__type_support.c.o[0m
+[1.916s] [ 56%] [32m[1mLinking CXX shared library liblandmark_msgs__rosidl_typesupport_c.so[0m
+[1.922s] [ 58%] [32m[1mLinking C shared library liblandmark_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.952s] [ 58%] Built target landmark_msgs__rosidl_typesupport_c
+[1.952s] [ 58%] Built target landmark_msgs__rosidl_typesupport_introspection_c
+[1.960s] [ 64%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/landmark_msgs/msg/detail/landmark__type_support_c.cpp.o[0m
+[1.960s] [ 64%] [32mBuilding CXX object CMakeFiles/landmark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/landmark_msgs/msg/detail/landmark_array__type_support_c.cpp.o[0m
+[2.089s] [ 66%] [32m[1mLinking CXX shared library liblandmark_msgs__rosidl_typesupport_cpp.so[0m
+[2.097s] [ 69%] [32m[1mLinking CXX shared library liblandmark_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.128s] [ 69%] Built target landmark_msgs__rosidl_typesupport_cpp
+[2.167s] [ 69%] Built target landmark_msgs__rosidl_typesupport_fastrtps_cpp
+[2.225s] [ 74%] [32m[1mLinking CXX shared library liblandmark_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.225s] [ 74%] [32m[1mLinking CXX shared library liblandmark_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.291s] [ 74%] Built target landmark_msgs__rosidl_typesupport_fastrtps_c
+[2.291s] [ 74%] Built target landmark_msgs__rosidl_typesupport_introspection_cpp
+[2.312s] [ 74%] Built target landmark_msgs
+[2.334s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.597s] [ 76%] Built target landmark_msgs__py
+[2.622s] [ 82%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_generator_py.dir/rosidl_generator_py/landmark_msgs/msg/_landmark_array_s.c.o[0m
+[2.622s] [ 82%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_generator_py.dir/rosidl_generator_py/landmark_msgs/msg/_landmark_s.c.o[0m
+[2.693s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/landmark_msgs/liblandmark_msgs__rosidl_generator_py.so[0m
+[2.736s] [ 84%] Built target landmark_msgs__rosidl_generator_py
+[2.755s] [ 89%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.755s] [ 89%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.755s] [ 92%] [32mBuilding C object CMakeFiles/landmark_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.835s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/landmark_msgs/landmark_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.836s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/landmark_msgs/landmark_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.836s] [100%] [32m[1mLinking C shared library rosidl_generator_py/landmark_msgs/landmark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.871s] [100%] Built target landmark_msgs__rosidl_typesupport_introspection_c__pyext
+[2.871s] [100%] Built target landmark_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.871s] [100%] Built target landmark_msgs__rosidl_typesupport_c__pyext
+[2.925s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs -- -j16 -l16
+[3.011s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs
+[3.020s] -- Install configuration: ""
+[3.020s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/ament_index/resource_index/rosidl_interfaces/landmark_msgs
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/landmark.h
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/landmark_array.h
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__functions.c
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__functions.h
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__type_support.h
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__functions.h
+[3.021s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__struct.h
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__functions.c
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__type_support.h
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__struct.h
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/library_path.sh
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/library_path.dsv
+[3.022s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_generator_c.so
+[3.023s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_generator_c.so" to ""
+[3.023s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.023s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.023s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.023s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.023s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_c.h
+[3.023s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_c.h
+[3.023s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_fastrtps_c.so
+[3.024s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.024s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.024s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.024s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__type_support.c
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__rosidl_typesupport_introspection_c.h
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_c.h
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__type_support.c
+[3.024s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_introspection_c.so
+[3.025s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_introspection_c.so" to ""
+[3.025s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_c.so
+[3.025s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_c.so" to ""
+[3.025s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.025s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.025s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/landmark.hpp
+[3.025s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.025s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__builder.hpp
+[3.025s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__traits.hpp
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__builder.hpp
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__traits.hpp
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__struct.hpp
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__struct.hpp
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/landmark_array.hpp
+[3.026s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.026s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.026s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.026s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_cpp.hpp
+[3.027s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/dds_fastrtps
+[3.027s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_cpp.hpp
+[3.027s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.027s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.027s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs
+[3.027s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg
+[3.027s] -- Up-to-date: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail
+[3.027s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__type_support.cpp
+[3.027s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__type_support.cpp
+[3.028s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark__rosidl_typesupport_introspection_cpp.hpp
+[3.028s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/include/landmark_msgs/landmark_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_cpp.hpp
+[3.028s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_introspection_cpp.so
+[3.028s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.028s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_cpp.so
+[3.029s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_typesupport_cpp.so" to ""
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/pythonpath.sh
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/pythonpath.dsv
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs-0.0.0-py3.10.egg-info
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.029s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark_s.c
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark_array.py
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark.py
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark_array_s.c
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/__init__.py
+[3.030s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_c.c
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/_landmark_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/__init__.py
+[3.031s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.032s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/liblandmark_msgs__rosidl_generator_py.so
+[3.056s] Listing '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs'...
+[3.057s] Compiling '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/__init__.py'...
+[3.057s] Listing '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg'...
+[3.057s] Compiling '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/__init__.py'...
+[3.057s] Compiling '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark.py'...
+[3.057s] Compiling '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/msg/_landmark_array.py'...
+[3.061s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.061s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.061s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.062s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.062s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.062s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/local/lib/python3.10/dist-packages/landmark_msgs/landmark_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.062s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_generator_py.so
+[3.062s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/lib/liblandmark_msgs__rosidl_generator_py.so" to ""
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/msg/Landmark.idl
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/msg/LandmarkArray.idl
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/msg/Landmark.msg
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/msg/LandmarkArray.msg
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/ament_index/resource_index/package_run_dependencies/landmark_msgs
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/ament_index/resource_index/parent_prefix_path/landmark_msgs
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/ament_prefix_path.sh
+[3.063s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/ament_prefix_path.dsv
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/path.sh
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/environment/path.dsv
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/local_setup.bash
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/local_setup.sh
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/local_setup.zsh
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/local_setup.dsv
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/package.dsv
+[3.064s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/ament_index/resource_index/packages/landmark_msgs
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_generator_cExport.cmake
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.065s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_cExport.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_generator_cppExport.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.066s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_cppExport.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_generator_pyExport.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/export_landmark_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/rosidl_cmake-extras.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.067s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgsConfig.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/cmake/landmark_msgsConfig-version.cmake
+[3.068s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/landmark_msgs/share/landmark_msgs/package.xml
+[3.071s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/landmark_msgs

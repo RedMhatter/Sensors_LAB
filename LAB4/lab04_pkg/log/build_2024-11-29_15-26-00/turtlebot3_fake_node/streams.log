@@ -1,0 +1,78 @@
+[0.012s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.092s] -- The CXX compiler identification is GNU 11.4.0
+[0.097s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.156s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.157s] -- Detecting C compile features
+[0.157s] -- Detecting C compile features - done
+[0.159s] -- Detecting CXX compiler ABI info
+[0.375s] -- Detecting CXX compiler ABI info - done
+[0.379s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.379s] -- Detecting CXX compile features
+[0.380s] -- Detecting CXX compile features - done
+[0.381s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.490s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.579s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.604s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.610s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.616s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.624s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.669s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.680s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.709s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.711s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.790s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.815s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.849s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.855s] -- Looking for pthread.h
+[0.998s] -- Looking for pthread.h - found
+[0.998s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.065s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.066s] -- Found Threads: TRUE  
+[1.090s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.101s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.109s] -- Found tf2_msgs: 0.25.8 (/opt/ros/humble/share/tf2_msgs/cmake)
+[1.137s] -- Found turtlebot3_msgs: 2.2.3 (/opt/ros/humble/share/turtlebot3_msgs/cmake)
+[1.192s] -- Configuring done
+[1.202s] -- Generating done
+[1.203s] -- Build files have been written to: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node
+[1.215s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node
+[1.217s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node -- -j16 -l16
+[1.270s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[9.082s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[9.474s] [100%] Built target turtlebot3_fake_node
+[9.487s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node -- -j16 -l16
+[9.520s] Invoking command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node
+[9.526s] -- Install configuration: ""
+[9.527s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[9.530s] -- Set runtime path of "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[9.530s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/include/
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[9.531s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[9.532s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.533s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[9.534s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[9.534s] -- Installing: /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[9.538s] Invoked command in '/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter:/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB4/lab04_pkg/build/turtlebot3_fake_node

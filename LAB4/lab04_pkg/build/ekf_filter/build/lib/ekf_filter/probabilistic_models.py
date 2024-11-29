@@ -33,10 +33,8 @@ def sample_velocity_motion_model(x, u, a, dt):
     x_prime = x[0] - r*sin(x[2]) + r*sin(x[2]+w_hat*dt)
     y_prime = x[1] + r*cos(x[2]) - r*cos(x[2]+w_hat*dt)
     theta_prime = x[2] + w_hat*dt + gamma_hat*dt
-    v_prime = v_hat
-    w_prime = w_hat
 
-    return np.array([x_prime, y_prime, theta_prime, v_prime, w_prime])
+    return np.array([x_prime, y_prime, theta_prime])
 
 def get_odometry_command(odom_pose, odom_pose_prev):
     """ Transform robot poses taken from odometry to u command
@@ -164,7 +162,7 @@ def velocity_mm_simpy():
     """
     Define Jacobian Gt w.r.t state x=[x, y, theta] and Vt w.r.t command u=[v, w]
     """
-    x, y, theta, v1, w1, v, w, dt = symbols('x y theta v1 w1 v w dt')
+    x, y, theta, v, w, dt = symbols('x y theta v w dt')
     R = v / w
     beta = theta + w * dt
     gux = Matrix(
@@ -172,19 +170,17 @@ def velocity_mm_simpy():
             [x - R * sympy.sin(theta) + R * sympy.sin(beta)],
             [y + R * sympy.cos(theta) - R * sympy.cos(beta)],
             [beta],
-            [v],
-            [w]
         ]
     )
 
-    eval_gux = squeeze_sympy_out(sympy.lambdify((x, y, theta, v1, w1, v, w, dt), gux, 'numpy'))
+    eval_gux = squeeze_sympy_out(sympy.lambdify((x, y, theta, v, w, dt), gux, 'numpy'))
 
-    Gt = gux.jacobian(Matrix([x, y, theta, v, w]))
-    eval_Gt = squeeze_sympy_out(sympy.lambdify((x, y, theta, v1, w1, v, w, dt), Gt, "numpy"))
+    Gt = gux.jacobian(Matrix([x, y, theta]))
+    eval_Gt = squeeze_sympy_out(sympy.lambdify((x, y, theta, v, w, dt), Gt, "numpy"))
     #print("Gt:", Gt)
 
     Vt = gux.jacobian(Matrix([v, w]))
-    eval_Vt = squeeze_sympy_out(sympy.lambdify((x, y, theta, v1, w1, v, w, dt), Vt, "numpy"))
+    eval_Vt = squeeze_sympy_out(sympy.lambdify((x, y, theta, v, w, dt), Vt, "numpy"))
     #print("Vt:", Vt)
 
     return eval_gux, eval_Gt, eval_Vt
@@ -211,7 +207,7 @@ def odometry_mm_simpy():
     return eval_gux_odom, eval_Gt_odom, eval_Vt_odom
 
 def landmark_sm_simpy():
-    x, y, theta, v, w, mx, my = symbols("x y theta v w m_x m_y")
+    x, y, theta, mx, my = symbols("x y theta m_x m_y")
 
     hx = Matrix(
         [
@@ -219,10 +215,10 @@ def landmark_sm_simpy():
             [sympy.atan2(my - y, mx - x) - theta],
         ]
     )
-    eval_hx = squeeze_sympy_out(sympy.lambdify((x, y, theta, v, w, mx, my), hx, "numpy"))
+    eval_hx = squeeze_sympy_out(sympy.lambdify((x, y, theta, mx, my), hx, "numpy"))
     
-    Ht = hx.jacobian(Matrix([x, y, theta, v, w]))
-    eval_Ht = squeeze_sympy_out(sympy.lambdify((x, y, theta, v, w, mx, my), Ht, "numpy"))
+    Ht = hx.jacobian(Matrix([x, y, theta]))
+    eval_Ht = squeeze_sympy_out(sympy.lambdify((x, y, theta, mx, my), Ht, "numpy"))
     #print("Ht:", Ht)
 
     return eval_hx, eval_Ht

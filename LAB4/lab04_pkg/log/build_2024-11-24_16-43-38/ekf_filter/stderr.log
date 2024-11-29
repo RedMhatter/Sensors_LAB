@@ -1,5 +1,0 @@
-  File "/home/rosario/Desktop/Sensors/LAB4/lab04_pkg/install/ekf_filter/lib/python3.10/site-packages/ekf_filter/probabilistic_models.py", line 183
-    eval_Gt = squeeze_sympy_out(sympy.lambdify((x, y, theta, v1, w1 v, w, dt), Gt, "numpy"))
-                                                                 ^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-

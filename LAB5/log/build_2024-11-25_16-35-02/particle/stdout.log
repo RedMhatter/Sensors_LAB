@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating particle.egg-info
+writing particle.egg-info/PKG-INFO
+writing dependency_links to particle.egg-info/dependency_links.txt
+writing entry points to particle.egg-info/entry_points.txt
+writing requirements to particle.egg-info/requires.txt
+writing top-level names to particle.egg-info/top_level.txt
+writing manifest file 'particle.egg-info/SOURCES.txt'
+reading manifest file 'particle.egg-info/SOURCES.txt'
+writing manifest file 'particle.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rosario/Desktop/Sensors/LAB5/install/particle/lib/python3.10/site-packages/particle.egg-link (link to .)
+Installing particle script to /home/rosario/Desktop/Sensors/LAB5/install/particle/lib/particle
+
+Installed /home/rosario/Desktop/Sensors/LAB5/build/particle
+running symlink_data
+creating /home/rosario/Desktop/Sensors/LAB5/install/particle/share/ament_index
+creating /home/rosario/Desktop/Sensors/LAB5/install/particle/share/ament_index/resource_index
+creating /home/rosario/Desktop/Sensors/LAB5/install/particle/share/ament_index/resource_index/packages
+symbolically linking /home/rosario/Desktop/Sensors/LAB5/build/particle/resource/particle -> /home/rosario/Desktop/Sensors/LAB5/install/particle/share/ament_index/resource_index/packages
+symbolically linking /home/rosario/Desktop/Sensors/LAB5/build/particle/package.xml -> /home/rosario/Desktop/Sensors/LAB5/install/particle/share/particle

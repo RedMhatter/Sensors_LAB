@@ -1,0 +1,9 @@
+Per la task 2:
+
+filter_no_robot --> codice usato in simulazione
+filter_robot --> codice modificato per farlo girare nella bag del robot vero
+
+Rispetto alla task 1 all'interno del pacchetto è presente il file function.py dove sono scritte le funzioni eval_hx per imu e odom
+È stato modificato il file probabilistic_models per farlo funzionare con lo stato [x, y, theta, v, omega] (sample_velocity_motion_model and velocity_mm_simpy).
+
+Quindi in sostanza i codici da commentare sono filter_robot, filter_no_robot, function, probabilistic_models (solo le cose modificate)

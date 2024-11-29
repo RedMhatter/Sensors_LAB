@@ -5,7 +5,7 @@ import tf_transformations
 import math
 from rclpy.node import Node
 from geometry_msgs.msg import Pose, Twist
-from sensor_msgs.msg import LaserScan, Imu
+from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
 import numpy as np
 #from turtlebot3_perception.landmark_msgs.msg import Landmark
@@ -17,7 +17,6 @@ from numpy.linalg import inv
 import matplotlib.pyplot as plt
 from ekf_filter.ekf import RobotEKF
 from ekf_filter.probabilistic_models import sample_velocity_motion_model, velocity_mm_simpy, landmark_sm_simpy, landmark_range_bearing_model
-from ekf_filter.function import Ht_imu, Ht_odom, eval_hx_imu, eval_hx_odom
 
 class Filter(Node):
 
@@ -42,73 +41,52 @@ class Filter(Node):
         _, eval_Gt, eval_Vt = velocity_mm_simpy()
 
         self.ekf = RobotEKF(
-            dim_x = 5, #dimensione mu
+            dim_x = 3, #dimensione mu
             dim_u = 2, #dimensione vel
             eval_gux = eval_gux,
             eval_Gt = eval_Gt,
             eval_Vt = eval_Vt
         )
-        self.ekf.mu = np.array([2, 6, 0.3, 0.0, 0.0])  # x, y, theta, v, w
-        self.ekf.Sigma = np.diag([0.1, 0.1, 0.1, 0.1, 0.1])
+        #self.ekf.mu = np.array([1, 1, 0.3])  # x, y, theta
+        self.ekf.Sigma = np.diag([0.1, 0.1, 0.1])
         self.ekf.Mt = Mt
 
-        self.std_imu = 0.1
-        self.sigma_imu = np.array([self.std_imu])
 
-        self.std_odom = 0.1
-        self.sigma_odom = np.array([self.std_odom])
+        # #Task 1
+        # self.landmarks_coord = {
+        # "id": [11, 12, 13, 21, 22, 23, 31, 32, 33],
+        # "x": [-1.1, -1.1, -1.1, 0.0, 0.0, 0.0, 1.1, 1.1, 1.1],
+        # "y": [-1.1, 0.0, 1.1, -1.1, 0.0, 1.1, -1.1, 0.0, 1.1],
+        # "z": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        # }
 
+        #Task 3
         self.landmarks_coord = {
-        "id": [11, 12, 13, 21, 22, 23, 31, 32, 33],
-        "x": [-1.1, -1.1, -1.1, 0.0, 0.0, 0.0, 1.1, 1.1, 1.1],
-        "y": [-1.1, 0.0, 1.1, -1.1, 0.0, 1.1, -1.1, 0.0, 1.1],
-        "z": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        "id": [0, 1, 2, 3, 4, 5],
+        "x": [1.80, -0.45, -0.2, 1.20, 1.33, -0.09],
+        "y": [0.14, -0.11, 1.76, 1.18, -1.59, -1.64],
+        "z": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
         }
 
-        self.Odom_sub = self.create_subscription(Odometry, '/odom', self.vel_callback, 10)
-        self.Imu_sub = self.create_subscription(Odometry, '/imu', self.imu_callback, 10)
-        self.Land_sub = self.create_subscription(LandmarkArray, '/landmarks', self.sensor_callback, 10)
+        self.Odom_sub = self.create_subscription(Twist, '/cmd_vel', self.vel_callback, 10)
+        self.Land_sub = self.create_subscription(LandmarkArray, '/camera/landmarks', self.sensor_callback, 10)
         timer_period = 1/20 #seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.publisher = self.create_publisher(Odometry, '/ekf', 10)
 
-        self.msg = Odometry()
-
-    def imu_callback(self, imu : Imu):
-        imu_w = imu.angular_velocity.z
-
-        self.ekf.update(z=imu_w, eval_hx=eval_hx_imu, eval_Ht=Ht_imu, Qt=np.diag([self.std_imu**2]), 
-                Ht_args=(*self.ekf.mu[4], *imu_w), # the Ht function requires a flattened array of parameters
-                hx_args=(self.ekf.mu[4], imu_w, self.sigma_imu),
-                residual=residual, 
-                angle_idx=-1)
-        
-        self.msg.twist.twist.angular.z = self.ekf.mu[4]
-        self.publisher.publish(self.msg)
-
-    def vel_callback(self, odom : Odometry):
-        self.vel_obtained = odom.twist.twist
-        z = np.array([self.vel_obtained.linear.x, self.vel_obtained.angular.z])
-        z_ = [self.vel_obtained.linear.x, self.vel_obtained.angular.z]
-
-        self.ekf.update(z, eval_hx=eval_hx_odom, eval_Ht=Ht_odom, Qt=np.diag([self.std_odom**2, self.std_odom**2]), 
-                Ht_args=(*self.ekf.mu[3:4], *z_), # the Ht function requires a flattened array of parameters
-                hx_args=(self.ekf.mu[3:4], z_, self.sigma_odom),
-                residual=residual, 
-                angle_idx=-1)
-        
-        self.msg.twist.twist.linear.x = self.ekf.mu[3]
-        self.msg.twist.twist.angular.z = self.ekf.mu[4]
-        self.publisher.publish(self.msg)
+    def vel_callback(self, twist : Twist):
+        self.vel_obtained = twist
+        self.pose_obtained = twist.angular
 
 
     def timer_callback(self):
-        vel = np.array([self.vel_obtained.linear.x, self.vel_obtained.angular.z])
-        #self.get_logger().info(f'{vel}]')
+        vel = np.array([self.vel_obtained.linear.x, self.vel_obtained.angular.z + 1e-4])
+        #self.get_logger().info(f'{self.vel_obtained}]')
         self.ekf.predict(u=vel, sigma_u=self.sigma_u, g_extra_args=(1/20,))  #timer callback
 
     def sensor_callback(self, landmarks : Landmark):
+        msg = Odometry()
         eval_hx_landm = landmark_range_bearing_model
 
         for lmark in landmarks.landmarks:
@@ -116,26 +94,22 @@ class Filter(Node):
             #self.get_logger().info(f'{index}')
             lmarks_coord = [self.landmarks_coord["x"][index], self.landmarks_coord["y"][index]]
 
-            print(*self.ekf.mu)
-
             z = np.array([lmark.range, lmark.bearing])
-                # run the correction step of the EKF
-            if z is not None:
-                self.ekf.update(z, eval_hx=eval_hx_landm, eval_Ht=self.eval_Ht, Qt=self.Q_landm, 
-                    Ht_args=(*self.ekf.mu, *lmarks_coord), # the Ht function requires a flattened array of parameters
-                    hx_args=(self.ekf.mu[:3], lmarks_coord, self.sigma_z),
-                    residual=residual, 
-                    angle_idx=-1)
-        self.msg.pose.pose.position.x = self.ekf.mu[0]
-        self.msg.pose.pose.position.y = self.ekf.mu[1]
-        self.msg.pose.pose.orientation.z = self.ekf.mu[2]
-        self.msg.twist.twist.linear.x = self.ekf.mu[3]
-        self.msg.twist.twist.angular.z = self.ekf.mu[4]
-        self.msg.header.stamp = self.get_clock().now().to_msg()
-
-        self.get_logger().info(f'{self.ekf.mu}')
             
-        self.publisher.publish(self.msg)
+                # run the correction step of the EKF
+            self.ekf.update(z, eval_hx=eval_hx_landm, eval_Ht=self.eval_Ht, Qt=self.Q_landm, 
+                Ht_args=(*self.ekf.mu, *lmarks_coord), # the Ht function requires a flattened array of parameters
+                hx_args=(self.ekf.mu, lmarks_coord, self.sigma_z),
+                residual=residual, 
+                angle_idx=-1)
+        msg.pose.pose.position.x = self.ekf.mu[0]
+        msg.pose.pose.position.y = self.ekf.mu[1]
+        msg.pose.pose.orientation.z = self.ekf.mu[2]
+        msg.header.stamp = self.get_clock().now().to_msg()
+
+        self.get_logger().info(f'{self.ekf.mu[2]}')
+            
+        self.publisher.publish(msg)
         
     
         

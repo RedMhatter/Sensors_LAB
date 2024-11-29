@@ -12,7 +12,6 @@ setup.py
 ekf_filter/__init__.py
 ekf_filter/ekf.py
 ekf_filter/filter.py
-ekf_filter/function.py
 ekf_filter/probabilistic_models.py
 ekf_filter/utils.py
 resource/ekf_filter
