@@ -1,0 +1,47 @@
+[0.525s] Invoking command in '/home/rosario/Desktop/Sensors/LAB5_robot/src/particle': AMENT_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/turtlebot3_perception:/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs LD_LIBRARY_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/rosario/Desktop/Sensors/LAB5_robot/build/particle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB5_robot/install/turtlebot3_perception/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/particle build --build-base /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build install --record /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/install.log --single-version-externally-managed install_data
+[0.691s] running egg_info
+[0.691s] creating ../../build/particle/particle.egg-info
+[0.692s] writing ../../build/particle/particle.egg-info/PKG-INFO
+[0.692s] writing dependency_links to ../../build/particle/particle.egg-info/dependency_links.txt
+[0.692s] writing entry points to ../../build/particle/particle.egg-info/entry_points.txt
+[0.692s] writing requirements to ../../build/particle/particle.egg-info/requires.txt
+[0.692s] writing top-level names to ../../build/particle/particle.egg-info/top_level.txt
+[0.692s] writing manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+[0.694s] reading manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+[0.694s] adding license file 'LICENSE'
+[0.694s] writing manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+[0.694s] running build
+[0.694s] running build_py
+[0.695s] creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build
+[0.695s] creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib
+[0.695s] creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] copying particle/pf.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] copying particle/probabilistic_models.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] copying particle/utils.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] copying particle/particle.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] copying particle/__init__.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+[0.695s] running install
+[0.695s] running install_lib
+[0.696s] creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.696s] copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/pf.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.696s] copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/probabilistic_models.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.696s] copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/utils.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.696s] copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/particle.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.696s] copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/__init__.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+[0.697s] byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/pf.py to pf.cpython-310.pyc
+[0.698s] byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/probabilistic_models.py to probabilistic_models.cpython-310.pyc
+[0.698s] byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/utils.py to utils.cpython-310.pyc
+[0.699s] byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/particle.py to particle.cpython-310.pyc
+[0.700s] byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/__init__.py to __init__.cpython-310.pyc
+[0.700s] running install_data
+[0.700s] creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index
+[0.700s] creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index
+[0.700s] creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index/packages
+[0.700s] copying resource/particle -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index/packages
+[0.700s] copying package.xml -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/particle
+[0.700s] running install_egg_info
+[0.702s] Copying ../../build/particle/particle.egg-info to /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle-0.0.0-py3.10.egg-info
+[0.703s] running install_scripts
+[0.719s] Installing particle script to /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/particle
+[0.719s] writing list of installed files to '/home/rosario/Desktop/Sensors/LAB5_robot/build/particle/install.log'
+[0.747s] Invoked command in '/home/rosario/Desktop/Sensors/LAB5_robot/src/particle' returned '0': AMENT_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/turtlebot3_perception:/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs LD_LIBRARY_PATH=/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/rosario/Desktop/Sensors/LAB5_robot/build/particle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB5_robot/install/turtlebot3_perception/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB5_robot/install/landmark_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/particle build --build-base /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build install --record /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/install.log --single-version-externally-managed install_data

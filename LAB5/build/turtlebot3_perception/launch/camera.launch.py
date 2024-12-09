@@ -1,1 +1,0 @@
-/home/rosario/Desktop/Sensors/LAB5/src/turtlebot3_perception/turtlebot3_perception/launch/camera.launch.py

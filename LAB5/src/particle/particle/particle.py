@@ -42,7 +42,7 @@ class Filter(Node):
         dim_x=dim_x,
         dim_u=dim_u,
         eval_gux=eval_gux,
-        resampling_fn=simple_resample,
+        resampling_fn=systematic_resample,
         boundaries=[(-3.0, 3.0), (-3.0, 3.0), (-np.pi, np.pi)],
         N=1000,
         )
@@ -77,6 +77,7 @@ class Filter(Node):
         cmd_vel = np.array([self.vel_obtained.linear.x, self.vel_obtained.angular.z])
         #self.get_logger().info(f'{cmd_vel}]')
         self.pf.predict(u=cmd_vel, sigma_u=self.sigma_u, g_extra_args=(1/20,))
+        self.pf.estimate(mean_fn=state_mean, residual_fn=residual, angle_idx=2)
 
     def sensor_callback(self, landmarks : Landmark):
         self.get_logger().info(f'{"ok"}')

@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/particle/particle.egg-info
+writing ../../build/particle/particle.egg-info/PKG-INFO
+writing dependency_links to ../../build/particle/particle.egg-info/dependency_links.txt
+writing entry points to ../../build/particle/particle.egg-info/entry_points.txt
+writing requirements to ../../build/particle/particle.egg-info/requires.txt
+writing top-level names to ../../build/particle/particle.egg-info/top_level.txt
+writing manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+reading manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/particle/particle.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build
+creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib
+creating /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+copying particle/pf.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+copying particle/probabilistic_models.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+copying particle/utils.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+copying particle/particle.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+copying particle/__init__.py -> /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle
+running install
+running install_lib
+creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/pf.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/probabilistic_models.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/utils.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/particle.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+copying /home/rosario/Desktop/Sensors/LAB5_robot/build/particle/build/lib/particle/__init__.py -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle
+byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/pf.py to pf.cpython-310.pyc
+byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/probabilistic_models.py to probabilistic_models.cpython-310.pyc
+byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/utils.py to utils.cpython-310.pyc
+byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/particle.py to particle.cpython-310.pyc
+byte-compiling /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index
+creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index
+creating /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index/packages
+copying resource/particle -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/ament_index/resource_index/packages
+copying package.xml -> /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/share/particle
+running install_egg_info
+Copying ../../build/particle/particle.egg-info to /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/python3.10/site-packages/particle-0.0.0-py3.10.egg-info
+running install_scripts
+Installing particle script to /home/rosario/Desktop/Sensors/LAB5_robot/install/particle/lib/particle
+writing list of installed files to '/home/rosario/Desktop/Sensors/LAB5_robot/build/particle/install.log'
