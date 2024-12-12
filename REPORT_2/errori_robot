@@ -1,0 +1,8 @@
+residual
+rms_error: 0.5098682163113154 , ma_error: 0.2911148264985801
+
+stratified
+rms_error: 0.19451081282867097 , ma_error: 0.10860916373905827
+
+systematic:
+rms_error: 0.19063216749634204 , ma_error: 0.10740796599738954
