@@ -1,0 +1,4 @@
+[console_scripts]
+lab6 = a_star.lab6:main
+lab6_pure = a_star.lab6_pure:main
+

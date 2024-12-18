@@ -1,0 +1,218 @@
+[0.012s] Invoking command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo
+[0.084s] -- The C compiler identification is GNU 11.4.0
+[0.162s] -- The CXX compiler identification is GNU 11.4.0
+[0.174s] -- Detecting C compiler ABI info
+[0.242s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.246s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.249s] -- Detecting CXX compiler ABI info
+[0.325s] -- Detecting CXX compiler ABI info - done
+[0.329s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.329s] -- Detecting CXX compile features
+[0.330s] -- Detecting CXX compile features - done
+[0.333s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.453s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.505s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.555s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.555s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.555s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.555s]   problems in calling code that expects `find_package` result variables
+[0.555s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.556s] Call Stack (most recent call first):
+[0.556s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.556s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.556s]   CMakeLists.txt:23 (find_package)
+[0.556s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.556s] [0m
+[0.556s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.558s] -- Checking for module 'bullet>=2.82'
+[0.569s] --   Found bullet, version 3.05
+[0.686s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.745s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.766s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.965s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.982s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.985s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.990s] -- Searching for dependencies of ignition-math6
+[0.991s] -- Looking for OGRE...
+[0.991s] -- OGRE_PREFIX_WATCH changed.
+[0.997s] -- Checking for module 'OGRE'
+[1.012s] --   Found OGRE, version 1.9.0
+[1.048s] -- Found Ogre Ghadamon (1.9.0)
+[1.059s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.067s] -- Looking for OGRE_Paging...
+[1.074s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.074s] -- Looking for OGRE_Terrain...
+[1.077s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.077s] -- Looking for OGRE_Property...
+[1.081s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.081s] -- Looking for OGRE_RTShaderSystem...
+[1.085s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.085s] -- Looking for OGRE_Volume...
+[1.088s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.088s] -- Looking for OGRE_Overlay...
+[1.092s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.179s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.180s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.181s] -- Searching for dependencies of ignition-transport8
+[1.197s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.205s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.213s] -- Checking for module 'libzmq >= 4'
+[1.228s] --   Found libzmq , version 4.3.4
+[1.268s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.273s] -- Checking for module 'uuid'
+[1.287s] --   Found uuid, version 2.37.2
+[1.327s] -- Found UUID: TRUE  
+[1.328s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.329s] -- Searching for dependencies of ignition-msgs5
+[1.347s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.352s] -- Checking for module 'tinyxml2'
+[1.367s] --   Found tinyxml2, version 9.0.0
+[1.408s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.410s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.410s] -- Searching for dependencies of ignition-common3
+[1.410s] -- Looking for dlfcn.h - found
+[1.413s] -- Looking for libdl - found
+[1.415s] -- Found DL: TRUE  
+[1.427s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.428s] -- Searching for <ignition-common3> component [graphics]
+[1.429s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.429s] -- Searching for dependencies of ignition-common3-graphics
+[1.430s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.432s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.432s] -- Searching for dependencies of ignition-fuel_tools4
+[1.524s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.533s] -- Checking for module 'jsoncpp'
+[1.551s] --   Found jsoncpp, version 1.9.5
+[1.596s] -- Found JSONCPP: TRUE  
+[1.605s] -- Checking for module 'libzip'
+[1.626s] --   Found libzip, version 1.7.3
+[1.681s] -- Found ZIP: TRUE  
+[1.681s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.682s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.682s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.689s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.691s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.733s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.739s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.749s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.766s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.784s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.830s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.848s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.881s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.884s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.009s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.044s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.092s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.101s] -- Found Threads: TRUE  
+[2.135s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.149s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[2.232s] -- Configuring done
+[2.261s] -- Generating done
+[2.264s] -- Build files have been written to: /home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo
+[2.295s] Invoked command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake /home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo
+[2.298s] Invoking command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo -- -j16 -l16
+[2.362s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[2.363s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[2.363s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[2.363s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[12.131s] [ 62%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[12.387s] [ 75%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[12.423s] [ 87%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[12.424s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[12.563s] [100%] Built target turtlebot3_drive
+[12.632s] [100%] Built target obstacles
+[12.635s] [100%] Built target obstacle1
+[12.635s] [100%] Built target obstacle2
+[12.648s] Invoked command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --build /home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo -- -j16 -l16
+[12.696s] Invoking command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo
+[12.702s] -- Install configuration: ""
+[12.703s] -- Execute custom install script
+[12.703s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[12.711s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[12.718s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/lab02.launch.py
+[12.726s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/lab04.launch.py
+[12.733s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/project.launch.py
+[12.742s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[12.751s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[12.758s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[12.766s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[12.773s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[12.780s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[12.788s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[12.795s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[12.803s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[12.811s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[12.819s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[12.827s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[12.835s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[12.845s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[12.853s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[12.861s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[12.870s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[12.877s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[12.885s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[12.892s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[12.898s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[12.906s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[12.913s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[12.920s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[12.927s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[12.935s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[12.945s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[12.953s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[12.960s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[12.967s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[12.975s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[12.983s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[12.991s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[12.998s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[13.006s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[13.013s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[13.019s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[13.026s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[13.034s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[13.040s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[13.047s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[13.057s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[13.065s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[13.073s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[13.083s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[13.090s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[13.097s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[13.105s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[13.113s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[13.121s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[13.128s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[13.135s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[13.146s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[13.155s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/hard_maze.world
+[13.162s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze.world
+[13.171s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[13.178s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[13.186s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[13.193s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[13.199s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[13.206s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[13.213s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[13.221s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/turtlebot3_gazebo.dsv
+[13.227s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[13.235s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[13.246s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[13.255s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[13.262s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[13.271s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[13.279s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[13.287s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[13.295s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[13.304s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[13.312s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[13.319s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[13.325s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.332s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.339s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[13.349s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[13.360s] -- Symlinking: /home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[13.371s] Invoked command in '/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/Desktop/Sensors/LAB6/install/a_star:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/opt/ros/humble /usr/bin/cmake --install /home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_gazebo

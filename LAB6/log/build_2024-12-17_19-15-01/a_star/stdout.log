@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/a_star/a_star.egg-info/PKG-INFO
+writing dependency_links to ../../build/a_star/a_star.egg-info/dependency_links.txt
+writing entry points to ../../build/a_star/a_star.egg-info/entry_points.txt
+writing requirements to ../../build/a_star/a_star.egg-info/requires.txt
+writing top-level names to ../../build/a_star/a_star.egg-info/top_level.txt
+reading manifest file '../../build/a_star/a_star.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/a_star/a_star.egg-info/SOURCES.txt'
+running build
+running build_py
+copying a_star/lab6_pure.py -> /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star
+copying a_star/lab6.py -> /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star
+running install
+running install_lib
+copying /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star/lab6_pure.py -> /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star
+copying /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star/lab6.py -> /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star
+byte-compiling /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star/lab6_pure.py to lab6_pure.cpython-310.pyc
+byte-compiling /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star/lab6.py to lab6.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/a_star/a_star.egg-info to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lab6 script to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/a_star
+Installing lab6_pure script to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/a_star
+writing list of installed files to '/home/rosario/Desktop/Sensors/LAB6/build/a_star/install.log'

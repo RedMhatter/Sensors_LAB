@@ -1,0 +1,1 @@
+/home/rosario/Desktop/Sensors/LAB6/build/landmark_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

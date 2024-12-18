@@ -25,8 +25,8 @@ class Filter(Node):
         # First, choose the Motion Model
 
         # general noise parameters
-        std_lin_vel = 0.1  # [m/s]
-        std_ang_vel = np.deg2rad(1.0)  # [rad/s]
+        std_lin_vel = 0.20  # [m/s]
+        std_ang_vel = np.deg2rad(0.5)  # [rad/s]
         self.sigma_u = np.array([std_lin_vel, std_ang_vel])
         sigma_u_odom = 0
 
@@ -34,7 +34,7 @@ class Filter(Node):
         eval_gux = sample_velocity_motion_model
 
         # Define noise params and Q for landmark sensor model
-        std_range = 0.1  # [m]
+        std_range = 0.5  # [m]
         std_bearing = np.deg2rad(1.0)  # [rad]
         self.sigma_z = np.array([std_range, std_bearing])
 
