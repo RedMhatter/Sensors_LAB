@@ -1,1 +1,6 @@
-/home/rosario/Desktop/Sensors/LAB6/build/turtlebot3_perception/config/landmarks.yaml
+# landmarks coordinates should be provided in the ground_truth reference frame
+landmarks:
+  id: [11, 12, 13, 21, 22, 23, 31, 32, 33]
+  x: [-1.1, -1.1, -1.1, 0.0, 0.0, 0.0, 1.1, 1.1, 1.1]
+  y: [-1.1, 0.0, 1.1, -1.1, 0.0, 1.1, -1.1, 0.0, 1.1]
+  z: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

@@ -29,10 +29,13 @@ class Pursuit(Node):
     def __init__(self):
         super().__init__('path_tracing')
         #PurePursuit
-        self.robot = Robot()
-        self.Lt = 0.1
-        self.target_vel = 0.22
-        self.kp = 1
+        initial_state = np.array([[0.0], [0.0], [math.pi/2]])
+        self.robot = utils.DifferentialDriveRobot(initial_state)
+        # self.robot.x = initial_state
+        # self.robot.u = np.array([[0.0], [0.0]])
+        self.Lt = 0.2
+        self.target_vel = 0.1
+        self.kp = 2
         self.path_interpolated = Path()
         self.controller = None
 
@@ -56,24 +59,31 @@ class Pursuit(Node):
     def control_loop(self):
         if self.controller is not None:
             # Calcola la velocità angolare
+            lt_parameter = 2
             w = self.controller.angular_velocity()
-            a = utils.proportional_control(self.controller.target_velocity(), self.robot.vel[0], kp=self.kp)
+            a = utils.proportional_control(self.controller.target_velocity(), self.robot.v, kp=self.kp)
             
             # Crea e pubblica il messaggio Twist per inviare i comandi di movimento
             cmd = Twist()
-            cmd.linear.x = float(a)
-            cmd.angular.z = float(w)
-            
+            #Adaptive PurePursuit
+            self.controller.Lt = abs(self.robot.v * lt_parameter)
+            self.robot.update_state([a, w], 1/15)
+
+            cmd.linear.x = self.robot.v
+            cmd.angular.z = self.robot.w
+
+            print(self.controller.Lt)
+
             self.vel_publisher.publish(cmd)
-            #self.get_logger().info(f'{cmd}]')
+            self.get_logger().info(f'{cmd}]')
 
     def path_callback(self, msg : Path):
         path = np.array([[pose.pose.position.x, pose.pose.position.y] for pose in msg.poses])
         self.path_interpolated = utils.interpolate_waypoints(path, resolution=0.01)
-        self.get_logger().info(f'{self.path_interpolated}]')
+        #self.get_logger().info(f'{self.path_interpolated}]')
         #self.get_logger().info(f"Received path with {len(path)} points.")
         if self.controller == None:
-            self.controller = pursuit.PurePursuitController(self.robot, self.path_interpolatedh, 0, self.Lt, self.target_vel)
+            self.controller = pursuit.PurePursuitController(self.robot, self.path_interpolated, 0, self.Lt, self.target_vel)
         
 def main(args=None):
     rclpy.init(args=args)

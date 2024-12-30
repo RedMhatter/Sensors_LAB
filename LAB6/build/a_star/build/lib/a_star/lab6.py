@@ -21,18 +21,23 @@ class PathPlanner(Node):
     def __init__(self):
         super().__init__('path_tracing')
 
-        relative_path = "/home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo/maps/project_map/map.yaml"
+        self.relative_path = "/home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo/maps/project_map/map.yaml"
+
         # print("Testing dijkstra on map1.png")
         # print("current directory: ", os.getcwd())
         # curr_dir = os.getcwd()
                                     
         # map_path = os.path.join(curr_dir, relative_path)
 
-        self.xy_reso = 2
-        _, grid_map, _ = utils.get_map(relative_path, self.xy_reso)
+        #Map Value
+        self.map_resolution = 0.05
+        self.map_origin = [-11.000000, -11.000000, 0.0]
+
+        self.xy_reso = 1
+        _, grid_map, _ = utils.get_map(self.relative_path, self.xy_reso)
         cost_map = self.generate_costmap(grid_map)
         self.start = np.array([220 / self.xy_reso, 220 / self.xy_reso] ).astype(int)
-        self.goal = np.array([220 / self.xy_reso, 264 / self.xy_reso]).astype(int)
+        self.goal = np.array([44 / self.xy_reso, 400 / self.xy_reso]).astype(int)
 
         self.planner = AStar(cost_map, utils.Movements8Connectivity())
 
@@ -43,9 +48,8 @@ class PathPlanner(Node):
         self.timer = self.create_timer(2.0, self.plan_and_publish)
 
         #Print del path
-        fig, axes = plt.subplots(1, 2, figsize=(12,6))
-        ax = axes[0]
-        ax2 = axes[1]
+        fig, axes = plt.subplots(1, 1, figsize=(12,12))
+        ax2 = axes
 
         self.test_algorithm(self.planner, self.start, self.goal, ax2, cost_map, 'planner 8')
         plt.show()
@@ -60,14 +64,9 @@ class PathPlanner(Node):
         self.get_logger().info(f'{msg}')
 
         # Crea e pubblica la costmap
-        _, grid_map, _ = utils.get_map("/home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo/maps/project_map/map.yaml", 2)
+        _, grid_map, _ = utils.get_map(self.relative_path, self.xy_reso)
         cost_map = self.generate_costmap(grid_map)
-        origin = Pose()
-        origin.position.x = 0.0
-        origin.position.y = 0.0
-        origin.position.z = 0.0
-        origin.orientation.w = 1.0  # Nessuna rotazione
-        self.publish_costmap(cost_map, 2, origin)
+        self.publish_costmap(cost_map, self.xy_reso)
 
 
     def test_algorithm(self, planner, start, goal, ax, grid_map, title):
@@ -92,15 +91,14 @@ class PathPlanner(Node):
         # Converti ogni coordinata in un PoseStamped
         for coord in path:
             pose = PoseStamped()
-            pose.header = path_msg.header  # Usa lo stesso header per ogni pose
-            pose.pose.position.x = float(coord[1] * 0.05 - 11 / self.xy_reso)  # Inverti x e y per ROS (colonna, riga)
-            pose.pose.position.y = float(coord[0] * 0.05 - 11 / self.xy_reso)
+            pose.pose.position.x = float(coord[1] * self.map_resolution + self.map_origin[0] / self.xy_reso)
+            pose.pose.position.y = float(coord[0] * self.map_resolution + self.map_origin[1] / self.xy_reso)
             pose.pose.position.z = 0.0  # Z è zero su una mappa 2D
             path_msg.poses.append(pose)
 
         return path_msg
 
-    def publish_costmap(self, costmap, resolution, origin):
+    def publish_costmap(self, costmap, resolution):
         """
         Pubblica la costmap su un topic ROS 2.
 
@@ -110,16 +108,10 @@ class PathPlanner(Node):
         """
         costmap_msg = OccupancyGrid()
 
-        # Header
-        costmap_msg.header = Header()
-        costmap_msg.header.stamp = self.get_clock().now().to_msg()
-        costmap_msg.header.frame_id = 'map'  # Frame di riferimento
-
         # Informazioni della mappa
         costmap_msg.info.resolution = float(resolution)
         costmap_msg.info.width = costmap.shape[1]  # Larghezza in celle
         costmap_msg.info.height = costmap.shape[0]  # Altezza in celle
-        costmap_msg.info.origin = origin  # Pose dell'origine della mappa
 
         # Converte la griglia 2D in un array 1D e la normalizza (tra 0 e 100)
         costmap_msg.data = (costmap.flatten() * 100 / costmap.max()).astype(int).tolist()
@@ -140,8 +132,8 @@ class PathPlanner(Node):
         for i in range(costmap.shape[0]):
             for j in range(costmap.shape[1]):
                 if grid_map[i, j] > 0:
-                    costmap[i - 2 : i + 3, j - 2 : j + 3] += 10
-                    costmap[i - 1 : i + 2, j - 1 : j + 2] += 20
+                    costmap[i - 4 : i + 5, j - 4 : j + 5] += 10
+                    costmap[i - 2 : i + 3, j - 2 : j + 3] += 20
         costmap[grid_map > 0] = 100
         costmap[costmap > 255] = 100
         return costmap

@@ -1,0 +1,26 @@
+[0.442s] Invoking command in '/home/rosario/Desktop/Sensors/LAB6/src/a_star': AMENT_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs LD_LIBRARY_PATH=/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/rosario/Desktop/Sensors/LAB6/build/a_star/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/a_star build --build-base /home/rosario/Desktop/Sensors/LAB6/build/a_star/build install --record /home/rosario/Desktop/Sensors/LAB6/build/a_star/install.log --single-version-externally-managed install_data
+[0.586s] running egg_info
+[0.586s] writing ../../build/a_star/a_star.egg-info/PKG-INFO
+[0.587s] writing dependency_links to ../../build/a_star/a_star.egg-info/dependency_links.txt
+[0.587s] writing entry points to ../../build/a_star/a_star.egg-info/entry_points.txt
+[0.587s] writing requirements to ../../build/a_star/a_star.egg-info/requires.txt
+[0.587s] writing top-level names to ../../build/a_star/a_star.egg-info/top_level.txt
+[0.588s] reading manifest file '../../build/a_star/a_star.egg-info/SOURCES.txt'
+[0.588s] adding license file 'LICENSE'
+[0.588s] writing manifest file '../../build/a_star/a_star.egg-info/SOURCES.txt'
+[0.588s] running build
+[0.588s] running build_py
+[0.589s] copying a_star/lab6_pure.py -> /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star
+[0.589s] running install
+[0.589s] running install_lib
+[0.589s] copying /home/rosario/Desktop/Sensors/LAB6/build/a_star/build/lib/a_star/lab6_pure.py -> /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star
+[0.590s] byte-compiling /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star/lab6_pure.py to lab6_pure.cpython-310.pyc
+[0.591s] running install_data
+[0.591s] running install_egg_info
+[0.592s] removing '/home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star-0.0.0-py3.10.egg-info' (and everything under it)
+[0.592s] Copying ../../build/a_star/a_star.egg-info to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages/a_star-0.0.0-py3.10.egg-info
+[0.593s] running install_scripts
+[0.605s] Installing lab6 script to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/a_star
+[0.605s] Installing lab6_pure script to /home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/a_star
+[0.605s] writing list of installed files to '/home/rosario/Desktop/Sensors/LAB6/build/a_star/install.log'
+[0.622s] Invoked command in '/home/rosario/Desktop/Sensors/LAB6/src/a_star' returned '0': AMENT_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception:/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs LD_LIBRARY_PATH=/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/rosario/Desktop/Sensors/LAB6/build/a_star/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosario/Desktop/Sensors/LAB6/install/a_star/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB6/install/turtlebot3_perception/lib/python3.10/site-packages:/home/rosario/Desktop/Sensors/LAB6/install/landmark_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/a_star build --build-base /home/rosario/Desktop/Sensors/LAB6/build/a_star/build install --record /home/rosario/Desktop/Sensors/LAB6/build/a_star/install.log --single-version-externally-managed install_data
