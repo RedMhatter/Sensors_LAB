@@ -21,7 +21,7 @@ class PathPlanner(Node):
     def __init__(self):
         super().__init__('path_tracing')
 
-        self.relative_path = "/home/rosario/Desktop/Sensors/LAB6/src/turtlebot3_simulations/turtlebot3_gazebo/maps/project_map/map.yaml"
+        self.relative_path = "/home/rosario/Desktop/map_tue_07_01_2025/map.yaml"
 
         # print("Testing dijkstra on map1.png")
         # print("current directory: ", os.getcwd())
@@ -31,13 +31,13 @@ class PathPlanner(Node):
 
         #Map Value
         self.map_resolution = 0.05
-        self.map_origin = [-11.000000, -11.000000, 0.0]
+        self.map_origin = [-7.677608966827393, -14.758044242858887, 0.0]
 
         self.xy_reso = 1
         _, grid_map, _ = utils.get_map(self.relative_path, self.xy_reso)
         cost_map = self.generate_costmap(grid_map)
-        self.start = np.array([220 / self.xy_reso, 220 / self.xy_reso] ).astype(int)
-        self.goal = np.array([44 / self.xy_reso, 400 / self.xy_reso]).astype(int)
+        self.start = np.array([152 / self.xy_reso, 85 / self.xy_reso] ).astype(int)
+        self.goal = np.array([285 / self.xy_reso, 238 / self.xy_reso]).astype(int)
 
         self.planner = AStar(cost_map, utils.Movements8Connectivity())
 
